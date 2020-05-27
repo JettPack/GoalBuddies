@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="goals.css">
+<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<meta charset="UTF-8">
+<title>Document</title>
+</head>
+<body>
+        <h1>Enter Goals</h1>
+            <div class="inputbar">
+            	<form>
+            		<input type="text" placeholder="Your Goal">
+            		<br></br>
+            		<br></br>
+            		<br></br>
+            		<button class="submit" onclick="addRow()" type="submit">Submit</button>
+            	</form>
+            </div>
+        <h2>Current Goals</h2>
+        <div class="scrollable">
+        	<table id="inventory" style="width: 100%">
+  				<thead>
+    				<tr>
+      					<th>Goal</th>
+    				</tr>
+  				</thead>
+  			<tbody id="screen">
+  			</tbody>
+			</table>
+      	</div>
+        <script>
+    		function addRow(){
+      			var str = '<tr class = "boxType"><td>'+$('#goal').val()+'</td>\
+  			</tr>'
+      			$('#screen').append(str);
+      			localStorage.setItem("data", $('#screen').html());
+    		}
+  		</script>    
+      <div class="bottom-bar">
+      <div class="home"> 
+        <button class="button"> <a href="menupage.html" class="button">
+          <i class="far fa-compass"></i>
+        </a>
+        </button>
+      </div>
+   </div> 
+</body>
+</html>

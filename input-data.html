@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="input-data.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check-In</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  </head>
+  <body>
+  <div id="pagebox">   
+      <div class="form">
+      <p>
+      Input Goals
+        <input type="text" id="lname" placeholder="2:40 PM Feb 19 2019">
+        <button onclick="addRow()">submit</button>
+      </div>
+    <div class="parent">
+      <div class="scrollbar"></div>
+      <div class="scrollable">
+        <table id="inventory" style="width: 100%">
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th> Nesting Type </th>
+      <th> Nest type </th>
+    </tr>
+  </thead>
+  <tbody id="screen">
+  </tbody>
+</table>
+      </div>
+    </div>
+  </div>
+<script>
+    function addRow(){
+      var str = '<tr class = "boxType"><td>'+$('#time').val()+'</td>\
+  <td>'+$('#int').val()+'</td>\
+  <td>'+$('#lname').val()+'</td>\
+  <td>'+$('#fname').val()+'</td>\
+  </tr>'
+      $('#screen').append(str);
+      localStorage.setItem("data", $('#screen').html());
+    }
+  </script>
+  </body>
+</html>

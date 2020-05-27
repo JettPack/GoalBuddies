@@ -1,0 +1,120 @@
+html, body{
+   background-color: #F4796B;
+   margin: 0;
+   height: 100%;
+}
+
+h1{
+   font-size: 4.3vh;
+   font-weight: bold;
+   text-align: center;
+   color: #F44E3F;
+   font-family: 'Alfa Slab One';
+}
+
+.goals > div{
+   width: 72%;
+   height: 20vh;
+   background-color: #FFB997;
+   border-style: outset;
+   border-color: #FFB997;
+   border-width: 2vw;
+   margin: 1.5vh 12vw;
+}
+
+.buddy > div{
+   width: 72%;
+   height: 20vh;
+   background-color: #FFB997;
+   border-style: outset;
+   border-color: #FFB997;
+   border-width: 2vw;
+   margin: 1.5vh 12vw;
+}
+
+.closet > div{
+   width: 72%;
+   height: 20vh;
+   background-color: #E5A687;
+   border-style: outset;
+   border-color: #E5A687;
+   border-width: 2vw;
+   margin: 1.5vh 12vw;
+   color: #F44E3F;
+}
+
+.info{
+   height: 5vh;
+   width: 60vw;
+   background-color: #E8DAB2;
+   margin-top: 3vh;
+   display: inline-block;
+   margin-bottom: 10vh;
+   margin-left: 16vw;
+   margin-right: 4vw;
+   border-style: outset;
+   border-color: #E8DAB2;
+   border-width: 2vw;
+   color: #FFFFFF;
+
+}
+
+h3{
+   font-family: Arial;
+   text-align: center;
+   font-size: 7vw;
+   margin-top: 2%;
+   margin-bottom: 0%;
+   color: #F44E3F;
+}
+
+h2{
+   font-family: Arial;
+   text-align: center;
+   font-size: 5vw;
+   margin-top: 2%;
+   color: #F44E3F;
+}
+
+.choose {
+   border-style: solid;
+   border-width: 15px;
+   border-color:#F44E3F;
+   background-color: #E8DAB2;
+   border-radius: 15px;
+   height: 10%;
+   width: 75%;
+   text-align: center;
+   margin-left: 12%;
+   margin-top: 5%;
+}
+
+.goals-logo {
+   margin: 0px 23%;
+   border-width: 5px;
+   margin-bottom: 245px;
+   margin-left: 200px;
+   border-color: black;
+}
+
+.buddy-logo {
+   margin: 0px 23%;
+   border-width: 5px;
+   margin-bottom: 245px;
+   margin-left: 200px;
+   border-color: black;
+}
+
+.closet-logo {
+   margin: 0px 23%;
+   border-width: 5px;
+   margin-left: 200px;
+   border-color: black;
+}
+
+p {
+   font-size: 4vh;
+   margin-top: 0px;
+   margin-left: 12vw;
+   color: #F44E3F;
+}
